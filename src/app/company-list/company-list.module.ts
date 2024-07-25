@@ -5,6 +5,7 @@ import { CompanyListRoutingModule } from "./company-list-routing.module";
 import { CompanyItemComponent } from './components/company-item/company-item.component';
 import { CompanySortComponent } from './components/company-sort/company-sort.component';
 import { CompanyFilterComponent } from './components/company-filter/company-filter.component';
+import {CompanyListService} from "./services/company-list.service";
 
 
 
@@ -18,6 +19,7 @@ import { CompanyFilterComponent } from './components/company-filter/company-filt
   imports: [
     CompanyListRoutingModule,
     CommonModule
-  ]
+  ],
+  providers: [CompanyListService],
 })
 export class CompanyListModule { }
