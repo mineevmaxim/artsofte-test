@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ICompany } from "../../models/company.interface";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-company-item',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './company-item.component.scss'
 })
 export class CompanyItemComponent {
+  @Input() public company!: ICompany;
 
+  public constructor(private _router: Router) {
+  }
+
+  public navigateToCompanyDetail(): void {
+    this._router.navigate([`detail/${this.company.id}`])
+  }
 }

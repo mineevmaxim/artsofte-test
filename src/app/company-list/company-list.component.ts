@@ -11,15 +11,15 @@ import {ICompany} from "./models/company.interface";
 })
 export class CompanyListComponent implements OnInit {
 
-  public companies: Observable<ICompany[]>;
-  private _companies: BehaviorSubject<ICompany[]> = new BehaviorSubject<ICompany[]>([]);
+  public companies$: Observable<ICompany[]>;
+  private _companies$: BehaviorSubject<ICompany[]> = new BehaviorSubject<ICompany[]>([]);
 
   public constructor(
     private _router: Router,
     private _companyListService: CompanyListService
   ) {
-    this._companies.next([]);
-    this.companies = this._companies.asObservable();
+    this._companies$.next([]);
+    this.companies$ = this._companies$.asObservable();
   }
 
   ngOnInit(): void {
@@ -28,7 +28,7 @@ export class CompanyListComponent implements OnInit {
         take(1),
       )
       .subscribe((res: ICompany[]) => {
-        this._companies.next(res);
+        this._companies$.next(res);
       });
   }
 }

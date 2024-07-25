@@ -1,1 +1,16 @@
-<p>company-item works!</p>
+<li class="company-item" (click)="navigateToCompanyDetail()">
+  <img
+    src="{{company.logo}}"
+    alt="logo"
+    class="company-item__logo"
+  />
+  <p class="company-item__name">
+    {{company.suffix}} {{company.business_name}}
+  </p>
+  <p class="company-item__industry">
+    {{company.industry}}
+  </p>
+  <p class="company-item__type">
+    {{company.type}}
+  </p>
+</li>

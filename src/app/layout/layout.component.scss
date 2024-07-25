@@ -15,12 +15,17 @@
   display: flex;
   justify-content: center;
   gap: 16px;
-}
 
-.header__button {
+  &__button {
+    cursor: pointer;
+    border-radius: 0;
+    outline: none;
+    border: 1px #000 solid;
+    background: none;
+    padding: 8px;
 
-}
-
-.layout-content {
-
+    &:hover {
+      background: lightgray;
+    }
+  }
 }
