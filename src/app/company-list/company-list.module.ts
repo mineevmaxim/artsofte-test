@@ -2,12 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CompanyListComponent } from './company-list.component';
 import { CompanyListRoutingModule } from "./company-list-routing.module";
+import { CompanyItemComponent } from './components/company-item/company-item.component';
+import { CompanySortComponent } from './components/company-sort/company-sort.component';
+import { CompanyFilterComponent } from './components/company-filter/company-filter.component';
 
 
 
 @NgModule({
   declarations: [
-    CompanyListComponent
+    CompanyListComponent,
+    CompanyItemComponent,
+    CompanySortComponent,
+    CompanyFilterComponent
   ],
   imports: [
     CompanyListRoutingModule,
