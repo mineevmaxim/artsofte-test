@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
-import {CompanyListService} from "./services/company-list.service";
+import {CompanyListService} from "../../services/company-list.service";
 import {BehaviorSubject, Observable, take, tap} from "rxjs";
-import {ICompany} from "./models/company.interface";
+import {ICompany} from "../../../../shared/models/company.interface";
 
 @Component({
   selector: 'app-company-list',

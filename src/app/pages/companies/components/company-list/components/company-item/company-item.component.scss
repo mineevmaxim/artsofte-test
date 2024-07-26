@@ -1,0 +1,71 @@
+:host {
+  width: 100%;
+
+  &:last-child {
+    .company-item {
+      border-bottom: 1px #000 solid;
+    }
+  }
+}
+
+.company-item {
+  width: 100%;
+  marker: none;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border: 1px #000 solid;
+  border-bottom: none;
+
+  &:hover,
+  &:focus {
+    background: lightgray;
+  }
+
+  &:active {
+    background: gray;
+  }
+}
+
+.logo-container {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    height: 32px;
+  }
+}
+
+.text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__name {
+    flex: 2;
+    text-align: center;
+  }
+
+  &__industry {
+    flex: 2;
+    text-align: center;
+  }
+
+  &__type {
+    flex: 1;
+    text-align: center;
+  }
+}

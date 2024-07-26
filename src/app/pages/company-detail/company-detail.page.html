@@ -1,0 +1,27 @@
+<div class="company-detail">
+  <h1>
+    Детальная информация о компании
+  </h1>
+  <div class="logo-container">
+    <img
+      src="{{company?.logo}}"
+      alt="company logo"
+      class="logo-container__logo"
+    />
+  </div>
+  <h2>
+    Название: <b>{{company?.suffix}} {{company?.business_name}}</b>
+  </h2>
+  <p>
+    Вид деятельности: <b>{{company?.industry}}</b>
+  </p>
+  <p>
+    Слоган: <b>{{company?.catch_phrase}}</b>
+  </p>
+  <p>
+    Номер телефона: <b>{{company?.phone_number}}</b>
+  </p>
+  <p>
+    Адрес: <b>{{company?.full_address}}</b>
+  </p>
+</div>

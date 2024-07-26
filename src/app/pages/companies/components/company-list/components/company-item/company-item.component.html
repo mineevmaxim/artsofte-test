@@ -1,0 +1,22 @@
+<li class="company-item">
+  <button class="container" (click)="navigateToCompanyDetail()">
+    <div class="logo-container">
+      <img
+        src="{{company.logo}}"
+        alt="logo"
+        class="logo-container__logo"
+      />
+    </div>
+    <div class="text-container">
+      <p class="text-container__name">
+        {{company.suffix}} {{company.business_name}}
+      </p>
+      <p class="text-container__industry">
+        {{company.industry}}
+      </p>
+      <p class="text-container__type">
+        {{company.type}}
+      </p>
+    </div>
+  </button>
+</li>

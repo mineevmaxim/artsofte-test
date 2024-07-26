@@ -4,15 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'list',
-    loadChildren: () => import('./company-list/company-list.module').then(m => m.CompanyListModule),
+    loadChildren: () => import('./pages/companies/companies.page.module').then(m => m.CompaniesPageModule),
   },
   {
     path: 'map',
-    loadChildren: () => import('./company-yandex-map/company-yandex-map.module').then(m => m.CompanyYandexMapModule),
+    loadChildren: () => import('./pages/company-yandex-map/company-yandex-map.page.module').then(m => m.CompanyYandexMapPageModule),
   },
   {
     path: 'detail/:id',
-    loadChildren: () => import('./company-detail/company-detail.module').then(m => m.CompanyDetailModule),
+    loadChildren: () => import('./pages/company-detail/company-detail.page.module').then(m => m.CompanyDetailPageModule),
   },
   {
     path: '**',

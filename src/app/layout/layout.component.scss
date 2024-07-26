@@ -24,8 +24,13 @@
     background: none;
     padding: 8px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: lightgray;
+    }
+
+    &:active {
+      background: gray;
     }
   }
 }

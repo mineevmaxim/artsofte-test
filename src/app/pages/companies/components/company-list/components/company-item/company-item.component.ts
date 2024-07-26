@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ICompany } from "../../models/company.interface";
+import { ICompany } from "../../../../../../shared/models/company.interface";
 import { Router } from "@angular/router";
 
 @Component({

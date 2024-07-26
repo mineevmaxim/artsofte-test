@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CompanyYandexMapComponent } from './company-yandex-map.component';
+import { CompanyYandexMapPage } from './company-yandex-map.page';
 import { CompanyYandexMapRoutingModule } from "./company-yandex-map-routing.module";
 
 
 
 @NgModule({
   declarations: [
-    CompanyYandexMapComponent
+    CompanyYandexMapPage
   ],
   imports: [
     CompanyYandexMapRoutingModule,
     CommonModule
   ]
 })
-export class CompanyYandexMapModule { }
+export class CompanyYandexMapPageModule { }

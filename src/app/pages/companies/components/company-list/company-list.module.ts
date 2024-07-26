@@ -1,25 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CompanyListComponent } from './company-list.component';
-import { CompanyListRoutingModule } from "./company-list-routing.module";
+import { CompaniesPageRoutingModule } from "../../companies.page-routing.module";
 import { CompanyItemComponent } from './components/company-item/company-item.component';
-import { CompanySortComponent } from './components/company-sort/company-sort.component';
-import { CompanyFilterComponent } from './components/company-filter/company-filter.component';
-import {CompanyListService} from "./services/company-list.service";
-
+import { CompanyListService } from "../../services/company-list.service";
 
 
 @NgModule({
   declarations: [
     CompanyListComponent,
     CompanyItemComponent,
-    CompanySortComponent,
-    CompanyFilterComponent
   ],
   imports: [
-    CompanyListRoutingModule,
+    CompaniesPageRoutingModule,
     CommonModule
   ],
   providers: [CompanyListService],
+  exports: [
+    CompanyListComponent
+  ]
 })
 export class CompanyListModule { }

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
-import { CompanyYandexMapComponent } from "./company-yandex-map.component";
+import { CompaniesPage } from "./companies.page";
 
 const routes: Routes = [
   {
     path: '',
-    component: CompanyYandexMapComponent,
-  }
-]
+    component: CompaniesPage,
+  },
+];
 
 @NgModule({
   exports: [RouterModule],
@@ -15,4 +15,4 @@ const routes: Routes = [
     RouterModule.forChild(routes)
   ]
 })
-export class CompanyYandexMapRoutingModule { }
+export class CompaniesPageRoutingModule { }
