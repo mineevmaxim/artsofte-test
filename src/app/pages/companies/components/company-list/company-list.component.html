@@ -1,9 +1,9 @@
-<h1 class="header">
-  Список компаний
-</h1>
 <ng-container *ngIf="companies$ | async as companies">
   <ul class="company-list">
-    <app-company-item *ngFor="let company of companies" [company]="company">
+    <app-company-item
+      *ngFor="let company of companies"
+      [company]="company"
+    >
     </app-company-item>
   </ul>
 </ng-container>

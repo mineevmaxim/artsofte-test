@@ -1,3 +1,5 @@
+import { TCompanyType } from "./company-type.type";
+
 export interface ICompany {
   id: number;
   uid: string;
@@ -10,7 +12,7 @@ export interface ICompany {
   employee_identification_number: string;
   duns_number: string;
   logo: string;
-  type: string;
+  type: TCompanyType;
   phone_number: string;
   full_address: string;
   latitude: number;

@@ -1,1 +1,48 @@
-<p>company-filter works!</p>
+<form
+  [formGroup]="filterForm"
+  class="filter-form"
+>
+  <input
+    type="text"
+    formControlName="search"
+    class="filter-form__search"
+    placeholder="Поиск..."
+  >
+  <select
+    *ngIf="industries$ | async as industries"
+    name="Вид деятельности"
+    formControlName="industry"
+    class="filter-form__industry"
+  >
+    <option
+      value=""
+      [defaultSelected]="true"
+    >
+      Вид деятельности
+    </option>
+    <option
+      *ngFor="let i of industries"
+      value="{{i}}"
+    >
+      {{ i }}
+    </option>
+  </select>
+  <select
+    name="Тип"
+    formControlName="type"
+    class="filter-form__type"
+  >
+    <option
+      value=""
+      [defaultSelected]="true"
+    >
+      Тип
+    </option>
+    <option
+      *ngFor="let i of companyTypes"
+      value="{{i}}"
+    >
+      {{ i }}
+    </option>
+  </select>
+</form>

@@ -1,4 +1,15 @@
-<app-company-filter></app-company-filter>
-<app-company-sort></app-company-sort>
-<app-company-list>
-</app-company-list>
+<h1 class="header">
+  Список компаний
+</h1>
+<ng-container *ngIf="initialCompanies.length; else error">
+  <app-company-filter
+    [companies]="initialCompanies"
+    (setCompanies)="setCompanies($event)"
+  ></app-company-filter>
+  <app-company-sort></app-company-sort>
+  <app-company-list [companies$]="companies$">
+  </app-company-list>
+</ng-container>
+<ng-template #error>
+  <h2>Произошла ошибка загрузки данных, обновите страницу</h2>
+</ng-template>

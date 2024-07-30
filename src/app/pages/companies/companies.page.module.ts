@@ -4,6 +4,8 @@ import { CompaniesPage } from './companies.page';
 import {CompanyListModule} from "./components/company-list/company-list.module";
 import { CompanySortComponent } from './components/company-sort/company-sort.component';
 import { CompanyFilterComponent } from './components/company-filter/company-filter.component';
+import {CompanyListService} from "./services/company-list.service";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 
@@ -16,6 +18,9 @@ import { CompanyFilterComponent } from './components/company-filter/company-filt
   imports: [
     CommonModule,
     CompanyListModule,
-  ]
+    FormsModule,
+    ReactiveFormsModule,
+  ],
+  providers: [CompanyListService]
 })
 export class CompaniesPageModule { }
