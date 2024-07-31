@@ -13,7 +13,7 @@ export class CompanyListService {
   public getCompanyList(): Observable<ICompany[]> {
     return this._http.get<ICompany[]>('https://random-data-api.com/api/company/random_company', {
       params: {
-        size: 10,
+        size: 50,
       }
     });
   }

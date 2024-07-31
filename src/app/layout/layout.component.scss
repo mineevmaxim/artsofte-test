@@ -24,8 +24,12 @@
     background: none;
     padding: 8px;
 
-    &:hover,
-    &:focus {
+    &.active {
+      background: lightgreen;
+      pointer-events: none;
+    }
+
+    &:hover {
       background: lightgray;
     }
 

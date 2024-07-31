@@ -25,7 +25,6 @@ export class CompaniesPage implements OnInit {
 
   public setCompanies(companies: ICompany[]): void {
     this._companies$.next(companies);
-    console.log('called');
   }
 
   ngOnInit(): void {

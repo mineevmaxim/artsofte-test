@@ -1,1 +1,43 @@
-<p>company-sort works!</p>
+<div class="company-sort-container">
+  <form
+    [formGroup]="sortForm"
+    class="company-sort-form"
+  >
+    <label for="sort">
+      Сортировать по:
+    </label>
+    <select
+      class="company-sort-form__select"
+      id="sort"
+      name="sort"
+      formControlName="sort"
+    >
+      <option value="name" [defaultSelected]="true">
+        Названию
+      </option>
+      <option value="type">
+        Типу
+      </option>
+      <option value="industry">
+        Виду деятельности
+      </option>
+    </select>
+    <label for="sort-order">
+      по:
+    </label>
+    <select
+      class="company-sort-form__select"
+      id="sort-order"
+      name="sort order"
+      formControlName="order"
+    >
+      <option value="{{SortOrder.asc}}">
+        Возрастанию
+      </option>
+      <option value="{{SortOrder.desc}}">
+        Убыванию
+      </option>
+    </select>
+
+  </form>
+</div>

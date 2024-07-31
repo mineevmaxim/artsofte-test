@@ -9,11 +9,7 @@ import {Router} from "@angular/router";
 export class LayoutComponent {
   public constructor(private _router: Router) {}
 
-  public navigateToCompanyList(): void {
-    this._router.navigate(['/list']);
-  }
-
-  public navigateToCompanyYandexMap(): void {
-    this._router.navigate(['/map']);
+  public isActive(route: string) {
+    return this._router.url === route;
   }
 }

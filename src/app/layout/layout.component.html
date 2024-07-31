@@ -1,12 +1,20 @@
 <div class="layout">
-  <header class="header">
-    <button class="header__button" (click)="navigateToCompanyList()">
+  <nav class="header">
+    <button
+      class="header__button"
+      routerLink="/list"
+      [ngClass]="{'active': isActive('/list')}"
+    >
       Список
     </button>
-    <button class="header__button" (click)="navigateToCompanyYandexMap()">
+    <button
+      class="header__button"
+      routerLink="/map"
+      [ngClass]="{'active': isActive('/map')}"
+    >
       Показать на карте
     </button>
-  </header>
+  </nav>
   <main class="layout-content">
     <ng-content></ng-content>
   </main>

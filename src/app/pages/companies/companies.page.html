@@ -6,7 +6,8 @@
     [companies]="initialCompanies"
     (setCompanies)="setCompanies($event)"
   ></app-company-filter>
-  <app-company-sort></app-company-sort>
+  <app-company-sort [companies$]="companies$">
+  </app-company-sort>
   <app-company-list [companies$]="companies$">
   </app-company-list>
 </ng-container>
