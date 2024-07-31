@@ -4,18 +4,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutComponent } from './layout/layout.component';
-import {HttpClient, HttpHandler, provideHttpClient} from "@angular/common/http";
+import { provideHttpClient } from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LayoutComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-  ],
-  providers: [provideHttpClient()],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        LayoutComponent
+    ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+    ],
+    providers: [provideHttpClient()],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

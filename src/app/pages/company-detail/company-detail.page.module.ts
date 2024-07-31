@@ -7,13 +7,13 @@ import {CompanyDetailService} from "./services/company-detail.service";
 
 
 @NgModule({
-  declarations: [
-    CompanyDetailPage
-  ],
-  imports: [
-    CompanyDetailPageRoutingModule,
-    CommonModule,
-  ],
-  providers: [CompanyDetailService],
+    declarations: [
+        CompanyDetailPage
+    ],
+    imports: [
+        CompanyDetailPageRoutingModule,
+        CommonModule,
+    ],
+    providers: [CompanyDetailService],
 })
 export class CompanyDetailPageModule { }

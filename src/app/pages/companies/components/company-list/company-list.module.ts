@@ -6,16 +6,16 @@ import { CompanyItemComponent } from './components/company-item/company-item.com
 
 
 @NgModule({
-  declarations: [
-    CompanyListComponent,
-    CompanyItemComponent,
-  ],
-  imports: [
-    CompaniesPageRoutingModule,
-    CommonModule
-  ],
-  exports: [
-    CompanyListComponent
-  ]
+    declarations: [
+        CompanyListComponent,
+        CompanyItemComponent,
+    ],
+    imports: [
+        CompaniesPageRoutingModule,
+        CommonModule
+    ],
+    exports: [
+        CompanyListComponent
+    ]
 })
 export class CompanyListModule { }

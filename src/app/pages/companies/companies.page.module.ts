@@ -10,17 +10,17 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
-  declarations: [
-    CompaniesPage,
-    CompanySortComponent,
-    CompanyFilterComponent
-  ],
-  imports: [
-    CommonModule,
-    CompanyListModule,
-    FormsModule,
-    ReactiveFormsModule,
-  ],
-  providers: [CompanyListService]
+    declarations: [
+        CompaniesPage,
+        CompanySortComponent,
+        CompanyFilterComponent
+    ],
+    imports: [
+        CommonModule,
+        CompanyListModule,
+        FormsModule,
+        ReactiveFormsModule,
+    ],
+    providers: [CompanyListService]
 })
 export class CompaniesPageModule { }

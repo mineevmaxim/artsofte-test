@@ -3,16 +3,16 @@ import { RouterModule, Routes } from "@angular/router";
 import { CompanyYandexMapPage } from "./company-yandex-map.page";
 
 const routes: Routes = [
-  {
-    path: '',
-    component: CompanyYandexMapPage,
-  }
+    {
+        path: '',
+        component: CompanyYandexMapPage,
+    }
 ]
 
 @NgModule({
-  exports: [RouterModule],
-  imports: [
-    RouterModule.forChild(routes)
-  ]
+    exports: [RouterModule],
+    imports: [
+        RouterModule.forChild(routes)
+    ]
 })
 export class CompanyYandexMapRoutingModule { }
